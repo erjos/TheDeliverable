@@ -11,7 +11,7 @@ public class ReverseNumber {
 		// later)
 		int originalNumber;
 		int remainder;
-		int reverse;
+		int reverse = 0;
 
 		// Create the scanner object
 		Scanner userInput = new Scanner(System.in);
@@ -38,6 +38,11 @@ public class ReverseNumber {
 			// need to add something to change the originalNumber and stop the loop
 			originalNumber = originalNumber / 10;
 			
+			// need to assign a value to the "reverse" variable
+			
+			reverse= reverse * 10 + remainder;
+			
+			System.out.println(reverse);
 		}
 	}
 }
