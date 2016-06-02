@@ -24,5 +24,13 @@ public class ReverseNumber {
 		originalNumber = userInput.nextInt();
 
 		System.out.println(originalNumber);
+	
+		//Create a loop, goal: strip off digits of the original number until it's 0
+		while (originalNumber > 0) {
+			//lets assign a value to the remainder variable
+			remainder = originalNumber % 10;
+			//printing the remainder to see what happens
+			System.out.println(remainder);
+		}
 	}
 }
