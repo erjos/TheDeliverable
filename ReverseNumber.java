@@ -38,9 +38,9 @@ public class ReverseNumber {
 			// need to assign a value to the "reverse" variable
 			//reverse starts as zero so *10 won't do anything until second loop
 			reverse= reverse * 10 + remainder;
-			
-			//Print the final value
-			System.out.println("Your reversed number is : " + reverse);
 		}
+			
+			//Print the final value - must be outside the loop
+			System.out.println("Your reversed number is : " + reverse);
 	}
 }
