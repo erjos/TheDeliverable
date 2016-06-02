@@ -27,10 +27,17 @@ public class ReverseNumber {
 	
 		//Create a loop, goal: strip off digits of the original number until it's 0
 		while (originalNumber > 0) {
+			
 			//lets assign a value to the remainder variable
+			//taking the remainder of the number divided by 10 gives the last digit on the number
 			remainder = originalNumber % 10;
+			
 			//printing the remainder to see what happens
 			System.out.println(remainder);
+			
+			// need to add something to change the originalNumber and stop the loop
+			originalNumber = originalNumber / 10;
+			
 		}
 	}
 }
