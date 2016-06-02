@@ -22,8 +22,6 @@ public class ReverseNumber {
 		// Assign the number entered by the user to the variable
 		// "originalNumber"
 		originalNumber = userInput.nextInt();
-
-		System.out.println(originalNumber);
 	
 		//Create a loop, goal: strip off digits of the original number until it's 0
 		while (originalNumber > 0) {
@@ -33,16 +31,16 @@ public class ReverseNumber {
 			remainder = originalNumber % 10;
 			
 			//printing the remainder to see what happens
-			System.out.println(remainder);
 			
 			// need to add something to change the originalNumber and stop the loop
 			originalNumber = originalNumber / 10;
 			
 			// need to assign a value to the "reverse" variable
-			
+			//reverse starts as zero so *10 won't do anything until second loop
 			reverse= reverse * 10 + remainder;
 			
-			System.out.println(reverse);
+			//Print the final value
+			System.out.println("Your reversed number is : " + reverse);
 		}
 	}
 }
